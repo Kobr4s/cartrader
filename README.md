@@ -73,3 +73,7 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Librairie
+
+Quand on ajoute une librairie style Tailwindcss, ajouter le module dans le fichier nuxt config
