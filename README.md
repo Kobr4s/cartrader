@@ -99,3 +99,10 @@ Permet d'afficher le reste de ce qu'il y a a afficher en cas de pages imbriquée
 ## Composables NUXT
 
 UseHead permet de changer le titre de nos pages ! et en utilisant useRoute() recupérer le parametre dynamique de nos paths
+Permet de créer les notres afin de centraliser des fonctions voir useUtilities
+
+## Layout
+
+permet d'établir une composition de page pour toutes les pages
+
+il est possible de fair eun layout custom et de le redéfénir dans la partie script avec definePageMeta voir car.vue pour exemple
