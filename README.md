@@ -87,6 +87,8 @@ Afin de faire de multi pages il faut absolument créer un repertoire 'pages'
 
 Plus besoin d'importer les composants dans la partie script, et on peut utiliser le nom du repertoire et le nom du fichier voir exemple avec le rep cars dans components 
 
+DefineProps permet de définir des propriétés a un composant
+
 ## Path Dynamic et optionnel
 
 pour rendre un chemin dynamique dans nos pages on entoure le nom de cette page de [] et pour rendre ce chemin optionnel on l'entoure d'un double [[]]
@@ -100,9 +102,14 @@ Permet d'afficher le reste de ce qu'il y a a afficher en cas de pages imbriquée
 
 UseHead permet de changer le titre de nos pages ! et en utilisant useRoute() recupérer le parametre dynamique de nos paths
 Permet de créer les notres afin de centraliser des fonctions voir useUtilities
+useError => permet de récupérer les erreurs
 
 ## Layout
 
 permet d'établir une composition de page pour toutes les pages
 
 il est possible de fair eun layout custom et de le redéfénir dans la partie script avec definePageMeta voir car.vue pour exemple
+
+## nuxtErrorBundary
+
+permet de capter une erreur client side
