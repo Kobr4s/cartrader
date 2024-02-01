@@ -2,7 +2,6 @@
   <div>
     <!-- CAR DETAIL PAGE -->
     <div v-if="car">
-      {{ car }}
       <CarDetailHero :car="car" />
       <CarDetailAttributes :features="car.features" />
       <CarDetailDescription :description="car.description" />

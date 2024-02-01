@@ -113,3 +113,21 @@ il est possible de fair eun layout custom et de le redéfénir dans la partie sc
 ## nuxtErrorBundary
 
 permet de capter une erreur client side
+
+## Module nuxt-imageèedge
+
+utilise une autre balise que la balise img NuxtImg et permet d'optimiser les images
+
+## Emits
+
+Permet de communiquer d'un enfant a un parent => voir Cards et Card
+
+## Universal Rendering
+
+Pourquoi l'etat de notre like n'est pas gardé en compte quand on refresh ?
+
+Le mieux est de save dans une DB
+
+on peut entourer notre code de la balise ClientOnly ou renommer le fichier en mentionnant .client.vue dans notre cas
+on a utiliser la balise clientOnly pour le moment
+
