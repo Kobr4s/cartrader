@@ -131,3 +131,7 @@ Le mieux est de save dans une DB
 on peut entourer notre code de la balise ClientOnly ou renommer le fichier en mentionnant .client.vue dans notre cas
 on a utiliser la balise clientOnly pour le moment
 
+## LOCAL STORAGE
+
+A voir le module Pinia et ajouter un plugin de persistance !
+
