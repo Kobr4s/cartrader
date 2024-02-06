@@ -135,3 +135,34 @@ on a utiliser la balise clientOnly pour le moment
 
 A voir le module Pinia et ajouter un plugin de persistance !
 
+## SUPABASE 
+
+Permet de créer un systeme d'authentification pour notre application
+installer le module avec yarn add @nuxtjs/supabase@0.3.0 et l'ajouter dans le nuxt config
+une fois le projet créer sur supabase ajouter l'url et l'api dans un fichier .env 
+
+Nous donne access a de nombreux composables => useSupaBaseClient
+useSupabaseUser => permet d'obetnir les informatiosn du user connecté 
+
+## Google OAuth
+
+Une fois loggé, en allant dans l'inspecteur partie application => cookies , on peut voir notre token 
+En se rendant sur jwt.io, on peut voir les informations qui sont contenues dans notre token
+
+## Middleware
+
+les route middleware vont permettre de protegér l'access a certaines routes en fonction de si l'utilisateur est loggé ou a le role requis
+Quand l'utilisateur veut accéder a une page, le client envoie une requete au server qui renvoie le fichier html, css et js entierement construite.
+Avec les middleware, nous allons d'abord rencontré le middleware qui aura 3 buts:
+bloquer la navigation en fonction de certaines conditions (user log in, role, etcc)
+nous rediriger si user pas connecté ou 
+nous dirigé vers la page adequate
+
+on a ajouté notre code pour sécure sur les pages listings, create et view
+=> on a répéter du code seulement la fonction definePageMeta est lancée avant le root donc si on crée une fonction et qu'on appelle cette fonction on va avoir une erreur
+
+Pour régler ce soucis, on va créer un répertoire middleware et nommé le middleware afin de pouvoir l'appeler et d'optimiser notre code et ensuite un fichier js qui sera le nom de notre middleware
+
+Voir la video 48 pour faire un middleware global
+
+

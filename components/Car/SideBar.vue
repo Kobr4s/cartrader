@@ -138,6 +138,10 @@ const onChangePrice = () => {
       return;
     }
   }
+  /*
+    L'utilisation de useRoute permet de récupérer les parametres passé dans notre adresse et
+    useRouter permet de modifier notre adresse entre autre
+  */
   router.push({
     query: {
       minPrice: priceRange.value.min,
