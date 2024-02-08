@@ -122,7 +122,7 @@ const onChangeLocation = () => {
     });
   }
   updateModal("location");
-  navigateTo(`/city/${city.value}/car/${make}`);
+  navigateTo(`/city/${city.value}/car/${route.params.make}`);
   city.value = "";
 };
 
