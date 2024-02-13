@@ -144,6 +144,22 @@ une fois le projet créer sur supabase ajouter l'url et l'api dans un fichier .e
 Nous donne access a de nombreux composables => useSupaBaseClient
 useSupabaseUser => permet d'obetnir les informatiosn du user connecté 
 
+## Prisma
+
+Supabase nous permet de créer une base de données
+Grace a node/TS Prisma ORM on va pouvoir créer la DB dynamiquement dans NUXT
+
+yarn add prisma
+npx prisma init
+
+dans supabase settings database /  changer password et copier coller l'url de connection en changeant le password
+Creation de nos tables via le fichier "schema.prisma"
+
+Une fois créer on applique notre schema grace a la commande
+npx prisma db push
+
+Cascade delete ajouter onDelete: [Cascade] dans le fichier schema.prisma dans la relation de la table concernée
+
 ## Google OAuth
 
 Une fois loggé, en allant dans l'inspecteur partie application => cookies , on peut voir notre token 
@@ -165,4 +181,16 @@ Pour régler ce soucis, on va créer un répertoire middleware et nommé le midd
 
 Voir la video 48 pour faire un middleware global
 
+## JOI
+
+librairie qui permet de valider des données entrées par l'user
+
+yarn add joi
+
+import joi dans le fichier voulu
+
+
+
+$fetch pour les methods post, delete, put HTTP REQUEST
+useFetch pour les Get
 

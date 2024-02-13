@@ -1,9 +1,10 @@
 <template>
   <div class="rounded shadow mt-20">
-    <CarMessageCard />
-    <CarMessageCard />
-    <CarMessageCard />
-    <CarMessageCard />
+    <CarMessageCard
+      v-for="message in messages"
+      :key="message.id"
+      :message="message"
+    />
   </div>
 </template>
 <script setup>
@@ -15,4 +16,10 @@ definePageMeta({
   */
   middleware: ["auth"],
 });
+
+const route = useRoute();
+
+const { data: messages } = useFetch(
+  `/api/car/listings/${route.params.id}/message`
+);
 </script>

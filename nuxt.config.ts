@@ -6,6 +6,6 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss", 
     "@nuxt/image-edge", 
     "@nuxt/image", 
-    "@vueuse/nuxt", 
+    "@vueuse/nuxt",
     "@nuxtjs/supabase"]
 })
